@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My GitHub Website</title>
   <style>
+    /* Reset default margins */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
       scroll-behavior: smooth;
     }
+
+    /* Navigation Menu */
     nav {
       position: fixed;
       top: 0;
@@ -30,8 +34,50 @@
     nav a: hover {
       color: #f4d03f;
     }
+
+    /* Sections */
     section {
-      height: 100vh;
+      height: 100vh; /* full viewport height */
       display: flex;
       align-items: center;
-      justify-content: cente…
+      justify-content: center;
+      font-size: 2em;
+      color: #333;
+    }
+
+    /* Different background colors for each section */
+    #home { background: #f4f4f9; }
+    #about { background: #dfe6e9; }
+    #services { background: #ffeaa7; }
+    #projects { background: #fab1a0; }
+    #blog { background: #81ecec; }
+    #contact { background: #74b9ff; }
+
+    /* Add some padding top so content isn't hidden behind fixed nav */
+    section h1 {
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#blog">Blog</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Sections -->
+  <section id="home"><h1>🏠 About Us Section</h1></section>
+  <section id="about"><h1>ℹ️ Short Courses Section</h1></section>
+  <section id="services"><h1>💼 English Courses Section</h1></section>
+  <section id="projects"><h1>📂 Bachelors Programme</h1></section>
+  <section id="blog"><h1>📝 Masters Programme</h1></section>
+  <section id="contact"><h1>📞 Contact Section</h1></section>
+
+</body>
+</html>
