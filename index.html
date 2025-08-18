@@ -1,71 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sticky Horizontal Navigation Menu</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Menu</title>
+  <style>
+    /* Reset default margins */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        /* Sticky horizontal navigation bar */
-        nav {
-            background-color: #007bff;
-            padding: 10px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+    body {
+      font-family: Arial, sans-serif;
+    }
 
-        nav ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: center; /* Center the menu */
-            margin: 0;
-        }
+    /* Navigation bar styling */
+    nav {
+      background-color: #333;
+    }
 
-        nav ul li {
-            margin: 0 15px; /* Space between menu items */
-        }
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
 
-        nav ul li a {
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            padding: 8px 15px;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
+    nav ul li {
+      margin: 0;
+    }
 
-        nav ul li a: hover {
-            background-color: #0056b3;
-        }
+    nav ul li a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
 
-        /* Example content to show scrolling */
-        section {
-            height: 400px; /* Tall sections to demonstrate sticky nav */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 2rem;
-            border-bottom: 1px solid #ccc;
-        }
-    </style>
+    nav ul li a:hover {
+      background-color: #555;
+    }
+
+    /* Mobile menu toggle */
+    .menu-toggle {
+      display: none;
+      padding: 15px;
+      background-color: #333;
+      color: white;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        display: none;
+      }
+
+      nav ul.show {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Short Courses</a></li>
-            <li><a href="#">English Courses</a></li>
-            <li><a href="#">Bachelors Courses</a></li>
-            <li><a href="#">Masters Courses</a></li>
-            <li><a href="#">Contacts</a></li>
-        </ul>
-    </nav>
+  <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+
+  <nav>
+    <ul id="menu">
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#short-courses">Short Courses</a></li>
+      <li><a href="#english-courses">English Courses</a></li>
+      <li><a href="#bachelors">Bachelors Course</a></li>
+      <li><a href="#masters">Masters Courses</a></li>
+      <li><a href="#contacts">Contacts</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show');
+    }
+  </script>
 
 </body>
 </html>
