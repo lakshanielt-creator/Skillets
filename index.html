@@ -1,77 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Website</title>
-  <style>
-    /* Reset default margins */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu Example</title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
-    }
+        body {
+            font-family: Arial, sans-serif;
+        }
 
-    /* Navigation Menu */
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: #333;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      padding: 15px 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    nav a: hover {
-      color: #f4d03f;
-    }
+        /* Navigation bar styling */
+        nav {
+            background-color: #007bff;
+            padding: 10px 20px;
+        }
 
-    /* Sections */
-    section {
-      height: 100vh; /* full viewport height */
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2em;
-      color: #333;
-    }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
 
-    /* Different background colors for each section */
-    #home { background: #f4f4f9; }
-    #about { background: #dfe6e9; }
-    #services { background: #ffeaa7; }
-    #projects { background: #fab1a0; }
-    #blog { background: #81ecec; }
-    #contact { background: #74b9ff; }
+        nav ul li {
+            margin: 5px 10px;
+        }
 
-    /* Add some padding top so content isn't hidden behind fixed nav */
-    section h1 {
-      margin-top: 60px;
-    }
-  </style>
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 
-  <!-- Navigation Menu -->
-  <nav>
-  
-  <!-- Sections -->
-  <section id="home"><h1>🏠 About Us Section</h1></section>
-  <section id="about"><h1>ℹ️ Short Courses Section</h1></section>
-  <section id="services"><h1>💼 English Courses Section</h1></section>
-  <section id="projects"><h1>📂 Bachelors Programme</h1></section>
-  <section id="blog"><h1>📝 Masters Programme</h1></section>
-  <section id="contact"><h1>📞 Contact Section</h1></section>
-    
-  </nav>
+    <nav>
+        <ul>
+            <li><a href="#about-us">About Us</a></li>
+            <li><a href="#short-courses">Short Courses</a></li>
+            <li><a href="#english-courses">English Courses Section</a></li>
+            <li><a href="#bachelors">Bachelors Program</a></li>
+            <li><a href="#masters">Masters Program</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <!-- Example content sections -->
+    <section id="about-us"><h2>About Us</h2></section>
+    <section id="short-courses"><h2>Short Courses</h2></section>
+    <section id="english-courses"><h2>English Courses Section</h2></section>
+    <section id="bachelors"><h2>Bachelors Program</h2></section>
+    <section id="masters"><h2>Masters Program</h2></section>
+    <section id="contacts"><h2>Contacts</h2></section>
+
 </body>
 </html>
