@@ -3,34 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Menu Example</title>
+    <title>Sticky Horizontal Navigation Menu</title>
     <style>
-        /* Basic reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
         }
 
-        /* Navigation bar styling */
+        /* Sticky horizontal navigation bar */
         nav {
             background-color: #007bff;
             padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav ul {
             list-style-type: none;
             display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
+            justify-content: center; /* Center the menu */
+            margin: 0;
         }
 
         nav ul li {
-            margin: 5px 10px;
+            margin: 0 15px; /* Space between menu items */
         }
 
         nav ul li a {
@@ -42,14 +39,17 @@
             transition: background 0.3s;
         }
 
-        nav ul li a:hover {
+        nav ul li a: hover {
             background-color: #0056b3;
         }
 
-        /* Section styling for example */
+        /* Example content to show scrolling */
         section {
-            padding: 50px;
-            text-align: center;
+            height: 400px; /* Tall sections to demonstrate sticky nav */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
             border-bottom: 1px solid #ccc;
         }
     </style>
@@ -58,22 +58,22 @@
 
     <nav>
         <ul>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#short-courses">Short Courses</a></li>
-            <li><a href="#english-courses">English Courses</a></li>
-            <li><a href="#bachelors-courses">Bachelors Courses</a></li>
-            <li><a href="#masters-courses">Masters Courses</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Short Courses</a></li>
+            <li><a href="#">English Courses</a></li>
+            <li><a href="#">Bachelors Courses</a></li>
+            <li><a href="#">Masters Courses</a></li>
+            <li><a href="#">Contacts</a></li>
         </ul>
     </nav>
 
     <!-- Example content sections -->
-    <section id="about-us"><h2>About Us</h2></section>
-    <section id="short-courses"><h2>Short Courses</h2></section>
-    <section id="english-courses"><h2>English Courses</h2></section>
-    <section id="bachelors-courses"><h2>Bachelors Courses</h2></section>
-    <section id="masters-courses"><h2>Masters Courses</h2></section>
-    <section id="contacts"><h2>Contacts</h2></section>
+    <section>About Us</section>
+    <section>Short Courses</section>
+    <section>English Courses</section>
+    <section>Bachelors Courses</section>
+    <section>Masters Courses</section>
+    <section>Contacts</section>
 
 </body>
 </html>
