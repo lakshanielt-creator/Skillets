@@ -4,10 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Skillets — GitHub Pages</title>
-  <meta name="description" content="Simple, mobile‑friendly website template with a purple background and left-aligned title." />
+  <meta name="description" content=" Simple, mobile‑friendly website template with a purple background and left-aligned title." />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
-    :root{
+    : root{
       --bg: #4b0082; /* purple background */
       --muted: #d1b3ff;
       --text: #ffffff;
@@ -18,7 +18,7 @@
     }
     *{box-sizing:border-box}
     html,body{height:100%}
-    body{margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif; color:var(--text); background:var(--bg)}
+    body{margin:0; font-family: Inter,system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif; color: var(--text); background: var(--bg)}
     a{color:var(--accent); text-decoration:none}
     .container{max-width:var(--maxw); margin-inline:auto; padding:0 20px}header{padding:20px; background:rgba(75,0,130,1)}
 .brand-title{font-size:2rem; font-weight:700; text-align:left; color:var(--text)}
