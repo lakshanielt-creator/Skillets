@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     : root{
-      --bg: #4b0082; /* purple background */
+      --bg: #4b0082; /* white background */
       --muted: #d1b3ff;
       --text: #ffffff;
       --accent: #ffccff;
